@@ -1,0 +1,93 @@
+/* Container principal */
+.staff-container {
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7; /* Fond plus clair pour l'ensemble de la page */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    font-weight: bold;
+  }
+  
+  /* Section principale avec les colonnes */
+  .staff-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Espace entre les colonnes */
+    margin-top: 20px;
+  }
+  
+  /* Style pour chaque colonne */
+  .staff-column {
+    flex: 1; /* Prendre toute la largeur disponible */
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f4e1d2; /* Beige clair pour la colonne */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Légère ombre pour un effet 3D */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .staff-column:hover {
+    transform: translateY(-5px); /* Légère élévation au survol */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Ombre plus marquée */
+  }
+  
+  .staff-column h2 {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #e67e22; /* Une ligne orange pour délimiter le titre */
+    padding-bottom: 10px;
+  }
+  
+  /* Liste des éléments */
+  .staff-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .staff-column li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #34495e;
+  }
+  
+  .staff-column li:last-child {
+    border-bottom: none;
+  }
+  
+  .staff-column li span {
+    color: #7f8c8d; /* Couleur grise pour le statut */
+    font-size: 0.9rem;
+    font-weight: normal;
+    display: block;
+    margin-top: 5px;
+  }
+  
+  /* Ajouter un effet de survol sur les éléments de la liste */
+  .staff-column li:hover {
+    background-color: #e67e22; /* Survol avec couleur orange */
+    color: white; /* Changer la couleur du texte */
+    cursor: pointer;
+  }
+  
+  /* Style des matricules */
+  .matricule {
+    font-weight: bold;
+    color: #e67e22; /* Une teinte orange pour mettre en valeur le matricule */
+  }
+  
